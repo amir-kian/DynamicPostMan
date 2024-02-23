@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "4212cf71-4ec0-4a17-aa33-81782dcf2e62",
+		"name": "Labratory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8269129"
+	},
+	"item": [
+		{
+			"name": "https://localhost:7062/api/User/AddUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"{{Name}}\",\r\n   \"email\": \"{{Email}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7062/api/User",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7062",
+					"path": [
+						"api",
+						"User"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
